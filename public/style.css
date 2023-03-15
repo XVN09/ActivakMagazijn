@@ -1,6 +1,6 @@
 /* Set the background image */
 body {
-    background-image: url('Pictures/dreamy-background.jpg');
+    background-color:darkorange;
     background-size: cover;
     font-family: sans-serif;
 }
