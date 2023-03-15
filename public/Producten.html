@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>Producten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Producten.html">Producten</a></li>
+            </ul>
+      </nav>
+    </header>
+    
+    <div>
+        <table class="data-table">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>category</th>
+                <th>price</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script type="module">
+// Initialize Firebase
+      var firebaseConfig = {
+        apiKey: "AIzaSyC6uTdsptYIJ795bYo1KDVyQg2kTePfL30",
+        authDomain: "activak-57cf3.firebaseapp.com",
+        databaseURL: "https://activak-57cf3-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "activak-57cf3",
+        storageBucket: "activak-57cf3.appspot.com",
+        messagingSenderId: "745750044643",
+        appId: "1:745750044643:web:d954de0e41bc2222034ad6",
+        measurementId: "G-W3J6R56BLQ"
+      };
+      firebase.initializeApp(firebaseConfig);
+      
+      // Get a reference to the database service
+      var database = firebase.database().ref();
+      
+      // Listen for changes to the data in the database
+      database.on("value", function(snapshot) {
+        // Get the data from the snapshot
+        var data = snapshot.val();
+        
+        // Clear the table
+        var tableBody = document.querySelector("#data-table tbody");
+        tableBody.innerHTML = "";
+        
+        // Iterate over the data and add it to the table
+        for (var key in data) {
+          if (data.hasOwnProperty(key)) {
+            var row = tableBody.insertRow();
+            var nameCell = row.insertCell();
+            var categoryCell = row.insertCell();
+            var priceCell = row.insertCell();
+            var IdCell = row.insertCell();
+            
+            nameCell.innerHTML = data[key].name;
+            ageCell.innerHTML = data[key].category;
+            priceCell.innerHTML = data[key].price;
+            IdCell.innerHTML = data[key].id;
+          }
+        }
+      });
+    </script>
+
+</body>
+</html>
