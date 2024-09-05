@@ -469,7 +469,7 @@
         <!--Producten-->
         <scene sceneID="Zbu-IJ-ydH">
             <objects>
-                <viewController id="cat-kd-yHc" userLabel="Producten" customClass="ProductsViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cat-kd-yHc" userLabel="Producten" customClass="DisplayDataViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="etE-Cp-Vgq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,7 +483,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </activityIndicatorView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="DataCell" rowHeight="105" id="Yon-lD-bua" customClass="ProductCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="DataCell" rowHeight="105" id="Yon-lD-bua" customClass="DataCell" customModule="ActivakMagazijn1_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yon-lD-bua" id="3H7-ff-R0S">
@@ -546,8 +546,19 @@
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <connections>
+                                            <outlet property="dataImageView" destination="sqc-lU-NgW" id="u1E-6F-4ym"/>
+                                            <outlet property="dataName" destination="4Wa-a2-6qe" id="lym-sj-Dol"/>
+                                            <outlet property="dataPlace" destination="5qc-2B-8oQ" id="Xmb-CR-QP9"/>
+                                            <outlet property="dataPrice" destination="iW2-1o-Vat" id="nMb-sl-Vgt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cat-kd-yHc" id="bsV-40-5Dc"/>
+                                    <outlet property="delegate" destination="cat-kd-yHc" id="GQO-mh-isx"/>
+                                    <outlet property="prefetchDataSource" destination="cat-kd-yHc" id="YnD-Ji-c5B"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="irq-Py-KT4"/>
@@ -562,6 +573,9 @@
                     <navigationItem key="navigationItem" title="Materiaal" largeTitleDisplayMode="never" id="Q95-AT-u0K" userLabel="Producten">
                         <barButtonItem key="leftBarButtonItem" image="person.fill" catalog="system" id="MYT-cX-JPi">
                             <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="cat-kd-yHc" id="wOJ-Ui-X41"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="YXr-4w-oAG">
                             <imageReference key="image" image="barcode.viewfinder" catalog="system" symbolScale="large" renderingMode="template"/>
@@ -572,7 +586,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="YTa-CI-jMu" id="PBT-oM-hpy"/>
+                        <outlet property="rotatingThing" destination="852-Rq-hEw" id="MeI-kV-5h1"/>
+                        <outlet property="tableView" destination="YTa-CI-jMu" id="aXM-Jy-JoB"/>
                         <segue destination="RWH-xx-L4C" kind="presentation" identifier="LoggedInSegue" id="Drb-Sn-i9x"/>
                         <segue destination="WUo-bU-9Q1" kind="presentation" identifier="AccountStartScreenSegue" modalTransitionStyle="crossDissolve" id="tVn-Ad-OUR"/>
                         <segue destination="XTm-HV-5YL" kind="presentation" identifier="DetailSegue" id="sRM-6W-vRb"/>
