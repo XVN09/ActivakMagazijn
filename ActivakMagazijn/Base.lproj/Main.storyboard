@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ITa-aw-vrG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23068.1"/>
@@ -13,7 +13,7 @@
         <!--Winkeltje Uitscannen View Controller-->
         <scene sceneID="65S-cK-tNb">
             <objects>
-                <viewController id="wkl-wz-O3x" customClass="WinkeltjeUitscannenViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wkl-wz-O3x" customClass="WinkeltjeUitscannenViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Idn-ae-hzs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Sign Up-->
         <scene sceneID="UxW-Gf-9Sm">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewControllerPart2" title="Sign Up" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zpG-G9-8MK" customClass="SignUpViewControllerPart2" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewControllerPart2" title="Sign Up" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zpG-G9-8MK" customClass="SignUpViewControllerPart2" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H3T-Qu-tyS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,7 +223,7 @@
         <!--Animatoren Scanner-->
         <scene sceneID="Hb5-dH-qvh">
             <objects>
-                <viewController id="fx8-81-HFm" customClass="AnimatorenScanner" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fx8-81-HFm" customClass="AnimatorenScanner" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3VO-qS-TfM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +306,7 @@
         <!--Scanned Detail View Controller-->
         <scene sceneID="ikz-ew-Ohf">
             <objects>
-                <viewController storyboardIdentifier="ScannedDetailViewController" id="WRh-Kb-bqi" customClass="ScannedDetailViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannedDetailViewController" id="WRh-Kb-bqi" customClass="ScannedDetailViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PlE-5n-1td">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,7 +469,7 @@
         <!--Producten-->
         <scene sceneID="Zbu-IJ-ydH">
             <objects>
-                <viewController id="cat-kd-yHc" userLabel="Producten" customClass="DisplayDataViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cat-kd-yHc" userLabel="Producten" customClass="DisplayDataViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="etE-Cp-Vgq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -478,41 +478,37 @@
                                 <rect key="frame" x="0.0" y="44" width="393" height="732.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <activityIndicatorView key="tableFooterView" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="852-Rq-hEw">
-                                    <rect key="frame" x="0.0" y="183" width="393" height="776"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </activityIndicatorView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="DataCell" rowHeight="105" id="Yon-lD-bua" customClass="DataCell" customModule="ActivakMagazijn1_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="105"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="ProductCell" rowHeight="110" id="Yon-lD-bua" customClass="ProductCell">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yon-lD-bua" id="3H7-ff-R0S">
-                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="105"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naam product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wa-a2-6qe">
-                                                    <rect key="frame" x="147" y="6" width="210.66666666666663" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Naam product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wa-a2-6qe">
+                                                    <rect key="frame" x="140" y="6" width="210.66666666666652" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plaats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-2B-8oQ">
-                                                    <rect key="frame" x="142" y="36" width="75" height="16"/>
+                                                    <rect key="frame" x="142" y="37" width="75" height="16.666666666666671"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqc-lU-NgW">
-                                                    <rect key="frame" x="7.3333333333333286" y="8" width="121.99999999999999" height="85"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sqc-lU-NgW">
+                                                    <rect key="frame" x="7.3333333333333286" y="8" width="121.99999999999999" height="89"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-Kz-1FO">
-                                                    <rect key="frame" x="140" y="62" width="8.6666666666666572" height="16"/>
+                                                    <rect key="frame" x="140" y="63.666666666666657" width="8.6666666666666572" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prijs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW2-1o-Vat">
-                                                    <rect key="frame" x="151.33333333333334" y="62" width="43.666666666666657" height="16"/>
+                                                    <rect key="frame" x="151.33333333333334" y="63.666666666666657" width="43.666666666666657" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -547,18 +543,11 @@
                                         </accessibility>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <connections>
-                                            <outlet property="dataImageView" destination="sqc-lU-NgW" id="u1E-6F-4ym"/>
-                                            <outlet property="dataName" destination="4Wa-a2-6qe" id="lym-sj-Dol"/>
-                                            <outlet property="dataPlace" destination="5qc-2B-8oQ" id="Xmb-CR-QP9"/>
-                                            <outlet property="dataPrice" destination="iW2-1o-Vat" id="nMb-sl-Vgt"/>
+                                            <outlet property="detailsLabel" destination="4Wa-a2-6qe" id="4IE-G1-XPt"/>
+                                            <outlet property="productImageView" destination="sqc-lU-NgW" id="W0l-v3-l9s"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="cat-kd-yHc" id="bsV-40-5Dc"/>
-                                    <outlet property="delegate" destination="cat-kd-yHc" id="GQO-mh-isx"/>
-                                    <outlet property="prefetchDataSource" destination="cat-kd-yHc" id="YnD-Ji-c5B"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="irq-Py-KT4"/>
@@ -574,7 +563,7 @@
                         <barButtonItem key="leftBarButtonItem" image="person.fill" catalog="system" id="MYT-cX-JPi">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <action selector="loginButtonTapped:" destination="cat-kd-yHc" id="wOJ-Ui-X41"/>
+                                <action selector="loginButtonTapped:" destination="cat-kd-yHc" id="zit-io-xL0"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="YXr-4w-oAG">
@@ -586,11 +575,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="rotatingThing" destination="852-Rq-hEw" id="MeI-kV-5h1"/>
-                        <outlet property="tableView" destination="YTa-CI-jMu" id="aXM-Jy-JoB"/>
-                        <segue destination="RWH-xx-L4C" kind="presentation" identifier="LoggedInSegue" id="Drb-Sn-i9x"/>
-                        <segue destination="WUo-bU-9Q1" kind="presentation" identifier="AccountStartScreenSegue" modalTransitionStyle="crossDissolve" id="tVn-Ad-OUR"/>
-                        <segue destination="XTm-HV-5YL" kind="presentation" identifier="DetailSegue" id="sRM-6W-vRb"/>
+                        <outlet property="tableView" destination="YTa-CI-jMu" id="LxF-aS-f9i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMC-n6-mji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -600,7 +585,7 @@
         <!--Profile View-->
         <scene sceneID="AQW-l6-GiM">
             <objects>
-                <viewController storyboardIdentifier="ProfileView" id="qHZ-oa-XJV" customClass="ProfileView" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileView" id="qHZ-oa-XJV" customClass="ProfileView" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5M-fa-5oK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -825,7 +810,7 @@
         <!--Sign Up-->
         <scene sceneID="UM4-nP-Ymf">
             <objects>
-                <viewController storyboardIdentifier="Part 1" title="Sign Up" id="5vx-2F-Zq9" customClass="SingUpViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Part 1" title="Sign Up" id="5vx-2F-Zq9" customClass="SingUpViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qci-Tx-ZTY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -897,7 +882,7 @@
         <!--SignIn-->
         <scene sceneID="ZNc-6x-SuL">
             <objects>
-                <viewController title="SignIn" id="RKH-Cc-NEF" customClass="SignInViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignIn" id="RKH-Cc-NEF" customClass="SignInViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="byN-s4-7Of">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -998,7 +983,7 @@
         <!--Scan Barcode From User View Controller-->
         <scene sceneID="Esa-bK-4pp">
             <objects>
-                <viewController id="Vwb-Hd-krL" customClass="ScanBarcodeFromUserViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vwb-Hd-krL" customClass="ScanBarcodeFromUserViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="225-Kw-Mk0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1199,7 +1184,7 @@
         <!--Edit View Controller-->
         <scene sceneID="O6H-qA-oBz">
             <objects>
-                <viewController storyboardIdentifier="EditViewController" id="WDT-6d-wqu" customClass="EditViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditViewController" id="WDT-6d-wqu" customClass="EditViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vfY-Lk-7Fo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1229,7 +1214,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categorie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxJ-1R-Kdn">
-                                <rect key="frame" x="0.0" y="573" width="75" height="21"/>
+                                <rect key="frame" x="0.3333333333333357" y="573" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1263,7 +1248,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaO-et-LRA">
-                                <rect key="frame" x="0.0" y="643" width="64" height="21"/>
+                                <rect key="frame" x="0.3333333333333357" y="643" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1513,13 +1498,13 @@
         <!--Welcome-->
         <scene sceneID="dMd-1u-qng">
             <objects>
-                <viewController storyboardIdentifier="Wel" title="Welcome" id="WUo-bU-9Q1" customClass="WelcomeTableViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Wel" title="Welcome" id="WUo-bU-9Q1" customClass="WelcomeTableViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JDj-n3-PUF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-ab-lXG">
-                                <rect key="frame" x="47.333333333333343" y="517" width="298.33333333333326" height="70.333333333333371"/>
+                                <rect key="frame" x="47.333333333333343" y="580.66666666666663" width="298.33333333333326" height="71"/>
                                 <buttonConfiguration key="configuration" style="gray" subtitle="" cornerStyle="medium">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1540,10 +1525,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-kF-a1u">
-                                <rect key="frame" x="23.333333333333343" y="0.0" width="346.33333333333326" height="274.66666666666669"/>
+                                <rect key="frame" x="23.333333333333343" y="59" width="346.33333333333326" height="278"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6M-Bg-ecB">
-                                <rect key="frame" x="47.333333333333343" y="611.33333333333337" width="298.33333333333326" height="70"/>
+                                <rect key="frame" x="47.333333333333343" y="675.66666666666663" width="298.33333333333326" height="71.333333333333371"/>
                                 <buttonConfiguration key="configuration" style="gray" subtitle="" cornerStyle="medium">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1564,7 +1549,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in of maak een account aan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGx-i1-lbY">
-                                <rect key="frame" x="23.666666666666657" y="303.66666666666669" width="345.66666666666674" height="130.33333333333331"/>
+                                <rect key="frame" x="23.666666666666657" y="366" width="345.66666666666674" height="131.66666666666663"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1601,7 +1586,7 @@
         <!--Detail View Controller-->
         <scene sceneID="pq4-aB-hku">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="nn6-1W-Zk3" customClass="DetailViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="nn6-1W-Zk3" customClass="DetailViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BwR-Rn-8lp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1843,7 +1828,7 @@
         <!--Locatie En Periode View Controller-->
         <scene sceneID="NK9-hj-Gyt">
             <objects>
-                <viewController id="A6Y-Qf-79y" customClass="LocatieEnPeriodeViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="A6Y-Qf-79y" customClass="LocatieEnPeriodeViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCL-Ul-D9r">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1913,7 +1898,7 @@
         <!--Materiaal Zoeker View Controller-->
         <scene sceneID="qeq-ga-Y1g">
             <objects>
-                <viewController id="JcP-5R-yRZ" customClass="MateriaalZoekerViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JcP-5R-yRZ" customClass="MateriaalZoekerViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKo-ax-kHZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2044,7 +2029,7 @@
             <objects>
                 <navigationController id="XTm-HV-5YL" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YLa-Qj-1Z1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -2074,7 +2059,7 @@
         <!--View Controller-->
         <scene sceneID="mz1-wt-yhc">
             <objects>
-                <viewController id="6mi-NB-vTd" customClass="PDFViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6mi-NB-vTd" customClass="PDFViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CLG-aj-lWK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2084,7 +2069,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PDFCell" rowHeight="470" id="4Sa-uo-6ZE" customClass="PDFTableViewCell" customModule="ActivakMagazijn1_0" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PDFCell" rowHeight="470" id="4Sa-uo-6ZE" customClass="PDFTableViewCell" customModule="ActivakMagazijn" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="414" height="470"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Sa-uo-6ZE" id="uux-MI-3tf">
@@ -2119,7 +2104,7 @@
         <!--Add Item To Database-->
         <scene sceneID="XBX-B5-xcu">
             <objects>
-                <viewController id="tG6-zE-Reu" customClass="AddItemToDatabase" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tG6-zE-Reu" customClass="AddItemToDatabase" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IwA-M3-irK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2178,7 +2163,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laat locatie zien" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04E-qa-sAz">
-                                <rect key="frame" x="36" y="377.33333333333331" width="359.66666666666669" height="20.333333333333314"/>
+                                <rect key="frame" x="36" y="377.33333333333331" width="357" height="20.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="04E-qa-sAz" secondAttribute="height" multiplier="351:20" id="YTr-za-MpA"/>
                                 </constraints>
@@ -2242,7 +2227,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="67d-aN-dUF">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="P7H-Q3-2M2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Z8W-ZH-LYx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Z8W-ZH-LYx">
                                 <rect key="frame" x="16" y="10.666666666666664" width="355" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2378,13 +2363,13 @@
         <!--Favorite Items View Controller-->
         <scene sceneID="ZvZ-fb-1cg">
             <objects>
-                <tableViewController id="exR-U0-tZc" customClass="FavoriteItemsViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="exR-U0-tZc" customClass="FavoriteItemsViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="e9L-xc-rpg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="FavoriteItemCell" rowHeight="105" id="EqS-qO-P24" customClass="DataCell" customModule="ActivakMagazijn1_0" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="FavoriteItemCell" rowHeight="105" id="EqS-qO-P24" customClass="DataCell" customModule="ActivakMagazijn" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EqS-qO-P24" id="rm4-Ch-gEw">
@@ -2536,7 +2521,7 @@
         <!--Reset Password View Controller-->
         <scene sceneID="FKv-QN-Owa">
             <objects>
-                <viewController id="7Zc-Y5-FGr" customClass="ResetPasswordViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Zc-Y5-FGr" customClass="ResetPasswordViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="de5-kw-Kgm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2617,7 +2602,7 @@
         <!--Winkeltje Meegeven View Controller-->
         <scene sceneID="ZCb-ED-T0f">
             <objects>
-                <viewController id="Rv3-az-MIW" customClass="WinkeltjeMeegevenViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rv3-az-MIW" customClass="WinkeltjeMeegevenViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jhk-AP-KwR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2676,7 +2661,7 @@
         <!--Materiaal Scanner-->
         <scene sceneID="PPS-YN-vrF">
             <objects>
-                <viewController id="AUR-5S-qMQ" customClass="MateriaalScanner" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AUR-5S-qMQ" customClass="MateriaalScanner" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Wt-Gq-tGe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2796,13 +2781,13 @@
         <!--Other View Controller-->
         <scene sceneID="m3X-iy-T9j">
             <objects>
-                <tableViewController id="KGT-eJ-7Ul" customClass="OtherViewController" customModule="ActivakMagazijn1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KGT-eJ-7Ul" customClass="OtherViewController" customModule="ActivakMagazijn" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Glu-qZ-m82">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationQuantityCell" rowHeight="88" id="u8c-hs-aQh" customClass="LocationQuantityTableViewCell" customModule="ActivakMagazijn1_0" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationQuantityCell" rowHeight="88" id="u8c-hs-aQh" customClass="LocationQuantityTableViewCell" customModule="ActivakMagazijn" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u8c-hs-aQh" id="hRc-Sm-Sgx">
@@ -2869,7 +2854,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="O9S-UT-YgP"/>
         <segue reference="3ZI-3G-Em3"/>
-        <segue reference="Drb-Sn-i9x"/>
+        <segue reference="LN1-Qq-Af8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="barcode.viewfinder" catalog="system" width="128" height="115"/>

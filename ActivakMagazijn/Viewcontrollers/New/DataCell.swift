@@ -1,0 +1,48 @@
+//
+//  DataCell.swift
+//  ActivakMagazijn1.0
+//
+//  Created by Xander Van nuffel on 13/04/2023.
+//
+
+import Foundation
+import UIKit
+import FirebaseStorage
+
+class DataCell : UITableViewCell {
+
+    @IBOutlet weak var dataImageView : UIImageView!
+    @IBOutlet weak var dataName : UILabel!
+    @IBOutlet weak var dataPlace: UILabel!
+    @IBOutlet weak var dataPrice : UILabel!
+    @IBOutlet weak var starButton : UIButton!
+    
+    let placeHolder = UIImage(named: "Placeholder")
+    
+    var data: MyData?
+
+    func setValues(data: MyData) {
+        dataName.text = data.titleText
+        dataPlace.text = data.placeText
+        dataPrice.text = data.priceText
+        
+        // Check if imgURL is not an empty string
+        if !data.imgURL.isEmpty {
+            let storageRef = Storage.storage().reference(forURL: data.imgURL)
+            
+            storageRef.getData(maxSize: 200000) { (data, error) in
+                if let err = error {
+                    print(err)
+                } else {
+                    if let image = data {
+                        let myImage: UIImage! = UIImage(data: image)
+                        self.dataImageView.image = myImage
+                    }
+                }
+            }
+        } else {
+            // Set placeholder image or do any other handling for the absence of imgURL
+            dataImageView.image = placeHolder
+        }
+    }
+}

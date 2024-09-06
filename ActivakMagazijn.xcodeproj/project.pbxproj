@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6176E2982C8AF8E00071EA40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6176E2972C8AF8E00071EA40 /* GoogleService-Info.plist */; };
 		61F558832C89D1EE00868AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F558822C89D1EE00868AB5 /* AppDelegate.swift */; };
 		61F558852C89D1EE00868AB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F558842C89D1EE00868AB5 /* SceneDelegate.swift */; };
 		61F558872C89D1EE00868AB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F558862C89D1EE00868AB5 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6176E2972C8AF8E00071EA40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61F5587F2C89D1EE00868AB5 /* ActivakMagazijn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivakMagazijn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F558822C89D1EE00868AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F558842C89D1EE00868AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +53,36 @@
 		61F558A52C89D1EF00868AB5 /* ActivakMagazijnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivakMagazijnUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		61DAE2D52C8AFFA4003F1769 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Account/Service.swift,
+				AddItemToDatabase.swift,
+				EditViewController.swift,
+				FavoriteItemsViewController.swift,
+				LijstenViewController.swift,
+				MateriaalInscanViewController.swift,
+				MateriaalScannerViewController.swift,
+				MateriaalZoekerViewController.swift,
+				New/Constants.swift,
+				New/Databas.db.sqbpro,
+				New/DataCell.swift,
+				New/FilterOption.swift,
+				New/MyData.swift,
+				New/MyUser.swift,
+				ProfileViewController.swift,
+				ResetPasswordViewController.swift,
+				SignInViewController.swift,
+				SingUpViewController.swift,
+				WinkeltjeUitscannenViewController.swift,
+			);
+			target = 61F5587E2C89D1EE00868AB5 /* ActivakMagazijn */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		61F558B22C89D27200868AB5 /* Viewcontrollers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Viewcontrollers; sourceTree = "<group>"; };
+		61F558B22C89D27200868AB5 /* Viewcontrollers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (61DAE2D52C8AFFA4003F1769 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Viewcontrollers; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +141,7 @@
 				61F5588B2C89D1EF00868AB5 /* Assets.xcassets */,
 				61F5588D2C89D1EF00868AB5 /* LaunchScreen.storyboard */,
 				61F558902C89D1EF00868AB5 /* Info.plist */,
+				6176E2972C8AF8E00071EA40 /* GoogleService-Info.plist */,
 			);
 			path = ActivakMagazijn;
 			sourceTree = "<group>";
@@ -238,6 +269,7 @@
 			files = (
 				61F5588C2C89D1EF00868AB5 /* Assets.xcassets in Resources */,
 				61F5588F2C89D1EF00868AB5 /* Base in Resources */,
+				6176E2982C8AF8E00071EA40 /* GoogleService-Info.plist in Resources */,
 				61F5588A2C89D1EE00868AB5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
