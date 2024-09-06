@@ -66,7 +66,6 @@
 				MateriaalScannerViewController.swift,
 				MateriaalZoekerViewController.swift,
 				New/Constants.swift,
-				New/Databas.db.sqbpro,
 				New/DataCell.swift,
 				New/FilterOption.swift,
 				New/MyData.swift,
