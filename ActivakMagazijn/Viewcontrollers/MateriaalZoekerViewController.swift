@@ -9,6 +9,7 @@ import Foundation
 import FirebaseDatabase
 import AVFoundation
 import FirebaseStorage
+import UIKit
 
 class MateriaalZoekerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     

@@ -12,7 +12,6 @@ class DisplayDataViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: Variables and outlets
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var rotatingThing: UIActivityIndicatorView!
     
     var refreshControl = UIRefreshControl()
     
@@ -39,10 +38,7 @@ class DisplayDataViewController: UIViewController, UITableViewDelegate, UITableV
         
         tableView.delegate = self
         tableView.dataSource = self
-                
-        rotatingThing.isHidden = false
-        rotatingThing.startAnimating()
-        
+
         // Configure search controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

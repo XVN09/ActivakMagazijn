@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6176E2982C8AF8E00071EA40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6176E2972C8AF8E00071EA40 /* GoogleService-Info.plist */; };
+		61DAE3152C8B07E3003F1769 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE3142C8B07E3003F1769 /* FirebaseAppCheck */; };
+		61DAE3172C8B07E3003F1769 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE3162C8B07E3003F1769 /* FirebaseAppDistribution-Beta */; };
+		61DAE3192C8B07E3003F1769 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE3182C8B07E3003F1769 /* FirebaseAuth */; };
+		61DAE31B2C8B07E3003F1769 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE31A2C8B07E3003F1769 /* FirebaseDatabase */; };
+		61DAE31D2C8B07E3003F1769 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE31C2C8B07E3003F1769 /* FirebaseFirestore */; };
+		61DAE31F2C8B07E3003F1769 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE31E2C8B07E3003F1769 /* FirebaseStorage */; };
+		61DAE34B2C8C4D5F003F1769 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61DAE34A2C8C4D5F003F1769 /* IQKeyboardManagerSwift */; };
 		61F558832C89D1EE00868AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F558822C89D1EE00868AB5 /* AppDelegate.swift */; };
 		61F558852C89D1EE00868AB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F558842C89D1EE00868AB5 /* SceneDelegate.swift */; };
-		61F558872C89D1EE00868AB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F558862C89D1EE00868AB5 /* ViewController.swift */; };
 		61F5588A2C89D1EE00868AB5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 61F558892C89D1EE00868AB5 /* Base */; };
 		61F5588C2C89D1EF00868AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61F5588B2C89D1EF00868AB5 /* Assets.xcassets */; };
 		61F5588F2C89D1EF00868AB5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 61F5588E2C89D1EF00868AB5 /* Base */; };
@@ -41,7 +47,6 @@
 		61F5587F2C89D1EE00868AB5 /* ActivakMagazijn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivakMagazijn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F558822C89D1EE00868AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F558842C89D1EE00868AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61F558862C89D1EE00868AB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61F558892C89D1EE00868AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61F5588B2C89D1EF00868AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61F5588E2C89D1EF00868AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +94,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DAE34B2C8C4D5F003F1769 /* IQKeyboardManagerSwift in Frameworks */,
+				61DAE3152C8B07E3003F1769 /* FirebaseAppCheck in Frameworks */,
+				61DAE3192C8B07E3003F1769 /* FirebaseAuth in Frameworks */,
+				61DAE31B2C8B07E3003F1769 /* FirebaseDatabase in Frameworks */,
+				61DAE31D2C8B07E3003F1769 /* FirebaseFirestore in Frameworks */,
+				61DAE3172C8B07E3003F1769 /* FirebaseAppDistribution-Beta in Frameworks */,
+				61DAE31F2C8B07E3003F1769 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +147,6 @@
 				61F558B22C89D27200868AB5 /* Viewcontrollers */,
 				61F558822C89D1EE00868AB5 /* AppDelegate.swift */,
 				61F558842C89D1EE00868AB5 /* SceneDelegate.swift */,
-				61F558862C89D1EE00868AB5 /* ViewController.swift */,
 				61F558882C89D1EE00868AB5 /* Main.storyboard */,
 				61F5588B2C89D1EF00868AB5 /* Assets.xcassets */,
 				61F5588D2C89D1EF00868AB5 /* LaunchScreen.storyboard */,
@@ -178,6 +189,15 @@
 			dependencies = (
 			);
 			name = ActivakMagazijn;
+			packageProductDependencies = (
+				61DAE3142C8B07E3003F1769 /* FirebaseAppCheck */,
+				61DAE3162C8B07E3003F1769 /* FirebaseAppDistribution-Beta */,
+				61DAE3182C8B07E3003F1769 /* FirebaseAuth */,
+				61DAE31A2C8B07E3003F1769 /* FirebaseDatabase */,
+				61DAE31C2C8B07E3003F1769 /* FirebaseFirestore */,
+				61DAE31E2C8B07E3003F1769 /* FirebaseStorage */,
+				61DAE34A2C8C4D5F003F1769 /* IQKeyboardManagerSwift */,
+			);
 			productName = ActivakMagazijn;
 			productReference = 61F5587F2C89D1EE00868AB5 /* ActivakMagazijn.app */;
 			productType = "com.apple.product-type.application";
@@ -242,7 +262,7 @@
 				};
 			};
 			buildConfigurationList = 61F5587A2C89D1EE00868AB5 /* Build configuration list for PBXProject "ActivakMagazijn" */;
-			compatibilityVersion = "Xcode 15.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -250,6 +270,10 @@
 				Base,
 			);
 			mainGroup = 61F558762C89D1EE00868AB5;
+			packageReferences = (
+				61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				61DAE3492C8C4D5F003F1769 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 61F558802C89D1EE00868AB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61F558872C89D1EE00868AB5 /* ViewController.swift in Sources */,
 				61F558832C89D1EE00868AB5 /* AppDelegate.swift in Sources */,
 				61F558852C89D1EE00868AB5 /* SceneDelegate.swift in Sources */,
 			);
@@ -641,6 +664,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+		61DAE3492C8C4D5F003F1769 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61DAE3142C8B07E3003F1769 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		61DAE3162C8B07E3003F1769 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		61DAE3182C8B07E3003F1769 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		61DAE31A2C8B07E3003F1769 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		61DAE31C2C8B07E3003F1769 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		61DAE31E2C8B07E3003F1769 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3132C8B07E3003F1769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		61DAE34A2C8C4D5F003F1769 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DAE3492C8C4D5F003F1769 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61F558772C89D1EE00868AB5 /* Project object */;
 }
